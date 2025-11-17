@@ -5,3 +5,19 @@ html {
     color: #eee;
     background: #121212;
 }
+
+ul.nav {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+}   
+
+/* Style links in topnav */
+ul.nav li a {
+  display: block;
+  color: #f1f1f1;
+  padding: 14px 16px;
+  text-decoration: none;
+}
