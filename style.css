@@ -6,18 +6,54 @@ html {
     background: #121212;
 }
 
+header {
+    /* background-color: #333333; */
+    margin: 0;
+    padding: 0;
+}
+
 nav {
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: #333333;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
 }   
 
 /* Style links in topnav */
 nav li a {
-  display: block;
-  color: #f1f1f1;
-  padding: 14px 16px;
-  text-decoration: none;
+    display: block;
+    color: #f1f1f1;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+div.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main-area {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;    
+}
+
+div.card {
+    border-radius: 10px; /* 5px rounded corners */    
+    padding: 20px 20px;
+    margin: 20px;
+    width: auto;
+    
+    /* Visible border: include style, width and color */
+    border: 1px solid #878787;
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
 }
