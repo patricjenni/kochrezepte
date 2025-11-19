@@ -1,11 +1,58 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import '../assets/style.css';
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Kochrezepte</title>
+   <link href="../assets/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Kochrezepte für Web Developer</h1>
+    </header>
+
+    <!-- Naviagation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Über uns</a></li>
+        </ul>
+    </nav>
+
+    <!-- Content Container -->
+    <main>
+        <div class="container">
+            <div class="main-area">
+                <div class="card">
+                    <div class="content">
+                        <h2>Zürigeschnetzeltes mit Röst</h2>
+                        <p>Das Rezept der Rezepte.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h2>Kartoffelsalat</h2>
+                        <p>Grossmutters Hit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="index.html">Impressum</a></li>
+            <li><a href="index.html">Datenschutz</a></li>
+        </ul>
+    </footer>
+
+
+</body>
+
+</html>
