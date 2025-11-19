@@ -1,31 +1,44 @@
-html {
-    background-color: grey;
+* {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     color: #eee;
-    background: #121212;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #121212;
 }
 
 header {
-    /* background-color: #333333; */
+    background-color: #333333;
     margin: 0;
     padding: 0;
 }
 
-nav {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #333333;
-}   
 
-/* Style links in topnav */
-nav li a {
-    display: block;
-    color: #f1f1f1;
-    padding: 14px 16px;
-    text-decoration: none;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #888888;
 }
 
 div.container {
