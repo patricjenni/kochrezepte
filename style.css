@@ -8,6 +8,10 @@
 
 body {
   background-color: #121212;
+  /* Make the page a column flex container so we can push the footer to the bottom */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
@@ -17,7 +21,7 @@ header {
 }
 
 
-ul {
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -25,11 +29,11 @@ ul {
   background-color: #333333;
 }
 
-ul li {
+nav ul li {
   float: left;
 }
 
-ul li a {
+nav ul li a {
   display: block;
   color: white;
   text-align: center;
@@ -37,8 +41,32 @@ ul li a {
   text-decoration: none;
 }
 
-ul li a:hover {
+nav ul li a:hover {
   background-color: #888888;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+footer ul li {
+  display: flex;
+  float: center;
+  justify-content: center;
+}
+
+footer ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  /* text-decoration: none; */
 }
 
 main {
@@ -46,6 +74,14 @@ main {
   width: 100%;
   justify-content: center;
   flex-wrap: wrap;
+  /* Let main grow to fill available space so footer is pushed to the bottom */
+  flex: 1 0 auto;
+}
+
+footer {
+  /* ensure footer spans full width and sits at the bottom */
+  background-color: #333333;
+  width: 100%;
 }
 
 .main-area {
