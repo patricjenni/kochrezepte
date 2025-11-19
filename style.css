@@ -1,19 +1,19 @@
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    color: #eee;
-    margin: 0px;
-    padding: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  color: #eee;
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
-    background-color: #121212;
+  background-color: #121212;
 }
 
 header {
-    background-color: #333333;
-    margin: 0;
-    padding: 0;
+  background-color: #333333;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -41,29 +41,30 @@ ul li a:hover {
   background-color: #888888;
 }
 
-div.container {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    flex-wrap: wrap;
+main {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .main-area {
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;    
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 div.card {
-    border-radius: 10px; /* 5px rounded corners */    
-    padding: 20px 20px;
-    margin: 20px;
-    width: auto;
-    
-    /* Visible border: include style, width and color */
-    border: 1px solid #878787;
+  border-radius: 10px;
+  /* 5px rounded corners */
+  padding: 20px 20px;
+  margin: 20px;
+  width: auto;
+
+  /* Visible border: include style, width and color */
+  border: 1px solid #878787;
 }
 
 /* Add some padding inside the card container */
