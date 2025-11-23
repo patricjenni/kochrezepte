@@ -1,3 +1,6 @@
+/* ============================= */
+/* 1. Global Styles              */
+/* ============================= */
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
@@ -14,13 +17,38 @@ body {
   min-height: 100vh;
 }
 
-header {
+/* ============================= */
+/* 2. Header                     */
+/* ============================= */
+/* Header mit Bild rechts neben dem Titel */
+.header-with-image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: #333333;
-  margin: 0px;
-  padding: 20px;
+  padding: 10px;
 }
 
+/* Titel links */
+.header-with-image h1 {
+  margin: 0;
+  flex: 1;
+  text-align: center;
+}
 
+/* Bild rechts */
+.header-image {
+  width: 150px;      
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid #555;
+  right: 20px; /* Abstand vom rechten Rand */
+  top: 10px;
+}
+
+/* ============================= */
+/* 3. Navigation                 */
+/* ============================= */
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -37,12 +65,73 @@ nav ul li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 8px 16px;
   text-decoration: none;
 }
 
 nav ul li a:hover {
   background-color: #888888;
+}
+
+/* ============================= */
+/* 4. Intro-Bereich (Text + Bild)*/
+/* ============================= */
+.intro-section {
+  padding: 10px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+  color: #eee;
+  line-height: 1.5;
+  font-size: 1.0rem;
+}
+
+/* ============================= */
+/* 4. Intro-Bereich              */
+/* ============================= */
+main {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* Let main grow to fill available space so footer is pushed to the bottom */
+  flex: 1 0 auto;
+}
+
+.main-area {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+/* ============================= */
+/* 6. Cards                      */
+/* ============================= */
+div.card {
+  border-radius: 10px;
+  /* 5px rounded corners */
+  padding: 20px 20px;
+  margin: 20px;
+  width: auto;
+
+  /* Visible border: include style, width and color */
+  border: 1px solid #878787;
+}
+
+/* ============================= */
+/* 7. Footer                     */
+/* ============================= */
+footer {
+  /* ensure footer spans full width and sits at the bottom */
+  background-color: #333333;
+  width: 100%;
 }
 
 footer ul {
@@ -67,43 +156,4 @@ footer ul li a {
   text-align: center;
   padding: 14px 16px;
   /* text-decoration: none; */
-}
-
-main {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  flex-wrap: wrap;
-  /* Let main grow to fill available space so footer is pushed to the bottom */
-  flex: 1 0 auto;
-}
-
-footer {
-  /* ensure footer spans full width and sits at the bottom */
-  background-color: #333333;
-  width: 100%;
-}
-
-.main-area {
-  width: 100%;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-div.card {
-  border-radius: 10px;
-  /* 5px rounded corners */
-  padding: 20px 20px;
-  margin: 20px;
-  width: auto;
-
-  /* Visible border: include style, width and color */
-  border: 1px solid #878787;
-}
-
-/* Add some padding inside the card container */
-.container {
-  padding: 2px 16px;
 }
