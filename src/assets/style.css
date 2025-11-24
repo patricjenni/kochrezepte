@@ -3,7 +3,6 @@
 /* ============================= */
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
   color: #eee;
   margin: 0px;
   padding: 0px;
@@ -80,7 +79,7 @@ nav ul li a:hover {
   padding: 10px 20px;
   max-width: 900px;
   margin: 0 auto;
-  text-align: left;
+  text-align: center;
   color: #eee;
   line-height: 1.5;
   font-size: 1.0rem;
@@ -93,6 +92,7 @@ main {
   display: flex;
   width: 100%;
   justify-content: center;
+  text-align: center;
   flex-wrap: wrap;
   /* Let main grow to fill available space so footer is pushed to the bottom */
   flex: 1 0 auto;
@@ -147,7 +147,7 @@ footer ul {
 
 footer ul li {
   /*display: flex;*/
-  /*float: center;*/
+  /*float: center;    */ 
   justify-content: center;
 }
 
@@ -157,4 +157,89 @@ footer ul li a {
   text-align: center;
   padding: 14px 16px;
   /* text-decoration: none; */
+}
+
+/* ============================= */
+/* About-Style (about.html)      */
+/* ============================= */
+
+/* Allgemeine Breite/Ausrichtung für den Inhalt auf about.html */
+main article {
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+/* Hintergrund-/Textbereich mit Liste und Bildern */
+.background-section {
+  padding: 10px 20px;
+  text-align: left;
+  line-height: 1.5;
+  font-size: 1.0rem;
+}
+
+#LearningsList {
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 210px;
+  text-align: left !important;
+}
+
+/* Definition-List-Bereich */
+.DefinitionList-section {
+  padding: 10px 20px 30px 20px;
+  text-align: left;
+  line-height: 1.5;
+  font-size: 1.0rem;
+}
+
+/* Bilder links und rechts floaten */
+.about-figure-left {
+  float: left;
+  width: 40%;
+  max-width: 220px;
+  margin: 0 20px 10px 0;
+}
+
+.about-figure-right {
+  float: right;
+  width: 40%;
+  max-width: 220px;
+  margin: 0 0 10px 20px;
+}
+
+.about-figure-left img,
+.about-figure-right img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid #555;
+}
+
+.about-figure-left figcaption,
+.about-figure-right figcaption {
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+/* Clearing, damit der Footer nicht „mitfloatet“ */
+.background-section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Definition List etwas lesbarer machen */
+.about-definition-list dt {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.about-definition-list dd {
+  margin-left: 0;
+  margin-bottom: 5px;
+}
+
+#LearningsListTitel {
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
