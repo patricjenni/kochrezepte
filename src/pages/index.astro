@@ -1,70 +1,40 @@
 ---
-import '../assets/style.css';
+import MySiteLayout from "../layouts/SiteLayout.astro";
+import "../assets/style.css";
 ---
 
-<!DOCTYPE html>
-<html lang="en">
+<MySiteLayout title="Home Page">
+  <!-- Intro-Bereich -->
+  <div class="intro-section">
+    <p>
+      Diese Kochrezepte sind speziell für Entwickler gedacht: klar strukturiert,
+      logisch aufgebaut und ohne unnötiges Blabla. Jedes Rezept folgt derselben
+      Systematik – schnell erfassbar, effizient umsetzbar und genau das
+      Richtige, wenn man nach einem Tag Debugging etwas braucht, das einfach
+      funktioniert.
+    </p>
+  </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kochrezepte</title>
-</head>
-
-<body>
-    <header class="header-with-image">
-        <h1>Kochrezepte für Web Developer</h1>
-        
-        <img src="/images/developer-kochrezepte.jpg"
-             alt="Kochrezepte für Entwickler"
-             class="header-image">
-    </header>
-
-    <!-- Naviagation Bar -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">Über uns</a></li>
-        </ul>
-    </nav>
-
-    <!-- Intro-Bereich -->
-    <div class="intro-section">
-        <p>
-        Diese Kochrezepte sind speziell für Entwickler gedacht: klar strukturiert, logisch aufgebaut und ohne unnötiges Blabla.
-        Jedes Rezept folgt derselben Systematik – schnell erfassbar, effizient umsetzbar und genau das Richtige,
-        wenn man nach einem Tag Debugging etwas braucht, das einfach funktioniert.
-        </p>    
-    </div>
-
-    <!-- Content Container -->
-    <main>
-        <div class="container">
-            <div class="main-area">
-                <div class="card">
-                    <div class="content">
-                        <h2>Zürigeschnetzeltes mit Röst</h2>
-                        <p>Das Rezept der Rezepte.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="content">
-                        <h2>Kartoffelsalat</h2>
-                        <p>Grossmutters Hit.</p>
-                    </div>
-                </div>
-            </div>
+  <!-- Content Container -->
+  <main>
+    <div class="container">
+      <div class="main-area">
+        <div class="card">
+          <div class="content">
+            <h2>Zürigeschnetzeltes mit Röst</h2>
+            <p>Das Rezept der Rezepte.</p>
+            <p>
+              <a href="rezepte/rezept-vorlage.html">Zum Rezept...</a>
+            </p>
+          </div>
         </div>
-    </main>
-
-    <footer>
-        <ul>
-            <li><a href="index.html">Impressum</a></li>
-            <li><a href="index.html">Datenschutz</a></li>
-        </ul>
-    </footer>
-
-
-</body>
-
-</html>
+        <div class="card">
+          <div class="content">
+            <h2>Kartoffelsalat</h2>
+            <p>Grossmutters Hit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</MySiteLayout>

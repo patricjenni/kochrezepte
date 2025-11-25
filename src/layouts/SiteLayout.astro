@@ -1,0 +1,40 @@
+---
+const { title } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta title={title} />
+  </head>
+  <body>
+    <header class="header-with-image">
+      <h1>Kochrezepte für Web Developer</h1>
+      <img
+        src="/images/developer-kochrezepte.jpg"
+        alt="Kochrezepte für Entwickler"
+        class="header-image"
+      />
+    </header>
+
+    <!-- Naviagation Bar -->
+    <nav>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">Über uns</a></li>
+      </ul>
+    </nav>
+
+    <article>
+      <slot />
+      <!-- your content is injected here -->
+    </article>
+    <footer>
+      <ul>
+        <li><a href="index.html">Impressum</a></li>
+        <li><a href="index.html">Datenschutz</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
