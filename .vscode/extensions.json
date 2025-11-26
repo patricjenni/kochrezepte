@@ -1,4 +1,8 @@
 {
-  "recommendations": ["htmlhint.vscode-htmlhint", "astro-build.astro-vscode"],
+  "recommendations": [
+    "htmlhint.vscode-htmlhint",
+    "astro-build.astro-vscode",
+    "smelukov.vscode-csstree"
+  ],
   "unwantedRecommendations": []
 }
