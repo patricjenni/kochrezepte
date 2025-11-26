@@ -10,6 +10,13 @@
   box-sizing: border-box;
 }
 
+.ingredient h1,
+.ingredient h2,
+.preperation h1,
+.preperation h2 {
+  padding-bottom: 20px;
+}
+
 /* layout each ingredient row as a single flex line so the two spans stay side-by-side */
 .ingredient > div {
   display: flex;
@@ -36,5 +43,5 @@
 }
 
 .recipe-main-image img {
-  border-radius: 8px;
+  border-radius: 16px;
 }
