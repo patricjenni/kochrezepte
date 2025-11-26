@@ -34,3 +34,7 @@
   overflow: hidden;
   white-space: nowrap;
 }
+
+.recipe-main-image img {
+  border-radius: 8px;
+}
