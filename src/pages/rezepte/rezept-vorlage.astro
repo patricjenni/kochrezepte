@@ -1,12 +1,48 @@
 ---
 import "../../assets/style.css";
+import "../../assets/receipt.css";
 import MySiteLayout from "../../layouts/SiteLayout.astro";
 ---
 
 <MySiteLayout title="Rezeptvorlage">
   <main class="main-area">
-    <div>
-      <p>Hier wollen wir ein Rezept darstellen.</p>
-    </div>
+    <section class="ingredient">
+      <h1>Fleisch</h1>
+      <div>
+        <span class="ingredient-quantity"></span>
+        <span class="ingredient-name">Bratbutter</span>
+      </div>
+      <div>
+        <span class="ingredient-quantity">400g</span>
+        <span class="ingredient-name">Kalbsplätzli in feinen Streifen</span>
+      </div>
+      <div class="spacer"></div>
+      <h1>Sauce</h1>
+      <div>
+        <span class="ingredient-quantity">1 EL</span>
+        <span class="ingredient-name">Butter</span>
+      </div>
+      <div>
+        <span class="ingredient-quantity">200 g</span>
+        <span class="ingredient-name">Champignons, in Scheiben</span>
+      </div>
+    </section>
+    <section class="preperation">
+      <h1>Zubereitung</h1>
+      <h2>Fleisch</h2>
+      <p>
+        Bratbutter in Bratpfanne erhitzen, Fleisch und Nierli portionenweise mit
+        wenig Mehl bestäuben, je ca. 2 Min. braten, herausnehmen, würzen, warm
+        stellen. Hitze reduzieren, Bratfett auftupfen.
+      </p>
+      <h2>Sauce</h2>
+      <p>
+        In derselben Pfanne Butter erwärmen, Champignons und Zwiebel andämpfen,
+        Wein dazugiessen, auf die Hälfte einköcheln. Rahm, Bouillon und Maizena
+        gut verrühren, dazugiessen, unter Rühren aufkochen, ca. 3 Min. kochen.
+        Fleisch und Nierli wieder beigeben, nur noch heiss werden lassen,
+        würzen. Petersilie darüberstreuen.
+      </p>
+    </section>
   </main>
 </MySiteLayout>

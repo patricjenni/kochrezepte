@@ -37,7 +37,7 @@ body {
 
 /* Bild rechts */
 .header-image {
-  width: 150px;      
+  width: 150px;
   height: auto;
   border-radius: 6px;
   border: 1px solid #555;
@@ -82,7 +82,7 @@ nav ul li a:hover {
   text-align: center;
   color: #eee;
   line-height: 1.5;
-  font-size: 1.0rem;
+  font-size: 1rem;
 }
 
 /* ============================= */
@@ -147,7 +147,7 @@ footer ul {
 
 footer ul li {
   /*display: flex;*/
-  /*float: center;    */ 
+  /*float: center;    */
   justify-content: center;
 }
 
@@ -174,7 +174,7 @@ main article {
   padding: 10px 20px;
   text-align: left;
   line-height: 1.5;
-  font-size: 1.0rem;
+  font-size: 1rem;
 }
 
 #LearningsList {
@@ -189,7 +189,7 @@ main article {
   padding: 10px 20px 30px 20px;
   text-align: left;
   line-height: 1.5;
-  font-size: 1.0rem;
+  font-size: 1rem;
 }
 
 /* Bilder links und rechts floaten */
@@ -242,4 +242,8 @@ main article {
 #LearningsListTitel {
   margin-top: 20px;
   margin-bottom: 10px;
+}
+
+.spacer {
+  padding-top: 1.5em;
 }

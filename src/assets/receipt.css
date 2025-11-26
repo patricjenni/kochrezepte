@@ -1,0 +1,36 @@
+.preperation {
+  margin: 20px 20px 20px 50px;
+  box-sizing: border-box;
+  max-width: 50%;
+  text-align: left;
+}
+
+.ingredient {
+  margin: 20px;
+  box-sizing: border-box;
+}
+
+/* layout each ingredient row as a single flex line so the two spans stay side-by-side */
+.ingredient > div {
+  display: flex;
+  flex-wrap: nowrap; /* prevent wrapping to next line */
+  gap: 0.5rem;
+  align-items: center;
+  padding-bottom: 0.6rem;
+}
+
+.ingredient-quantity {
+  font-weight: bold;
+  text-align: left;
+  /* make the quantity a fixed column inside the flex row */
+  flex: 0 0 100px; /* do not grow or shrink, keep 100px */
+}
+
+.ingredient-name {
+  text-align: left;
+  /* take remaining space; allow truncation instead of wrapping */
+  flex: 1 1 auto;
+  min-width: 0; /* allow flex children to shrink below their content width */
+  overflow: hidden;
+  white-space: nowrap;
+}
