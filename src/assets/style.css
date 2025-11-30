@@ -108,6 +108,11 @@ main {
   font-size: 1rem;
 }
 
+.default-section {
+  padding: 10px 20px;
+  text-align: left;
+}
+
 /* ============================= */
 /* Cards                      */
 /* ============================= */
