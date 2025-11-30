@@ -1,0 +1,75 @@
+/* Backstory-/Textbereich mit Liste und Bildern */
+.backstory-section {
+  padding: 10px 20px;
+  text-align: left;
+}
+
+#LearningsList {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  text-align: left !important;
+}
+
+/* Definition-List-Bereich */
+.DefinitionList-section {
+  padding: 10px 20px 30px 20px;
+  text-align: left;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+/* Bilder links und rechts floaten */
+.about-figure-left {
+  float: left;
+  width: 40%;
+  max-width: 220px;
+  margin: 0 20px 10px 0;
+}
+
+.about-figure-right {
+  float: right;
+  width: 40%;
+  max-width: 220px;
+  margin: 0 0 10px 20px;
+}
+
+.about-figure-left img,
+.about-figure-right img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid #555;
+}
+
+.about-figure-left figcaption,
+.about-figure-right figcaption {
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+/* Clearing, damit der Footer nicht „mitfloatet“ */
+.backstory-section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Definition List etwas lesbarer machen */
+.about-definition-list dt {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.about-definition-list dd {
+  margin-left: 0;
+  margin-bottom: 5px;
+}
+
+#LearningsListTitel {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.spacer {
+  padding-top: 1.5em;
+}

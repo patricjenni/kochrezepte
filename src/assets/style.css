@@ -1,5 +1,5 @@
 /* ============================= */
-/* 1. Global Styles              */
+/* Global Styles              */
 /* ============================= */
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -17,7 +17,7 @@ body {
 }
 
 /* ============================= */
-/* 2. Header                     */
+/* Header                     */
 /* ============================= */
 
 header {
@@ -49,7 +49,7 @@ header h1 {
 }
 
 /* ============================= */
-/* 3. Navigation                 */
+/* Navigation                 */
 /* ============================= */
 nav ul {
   list-style-type: none;
@@ -76,20 +76,7 @@ nav ul li a:hover {
 }
 
 /* ============================= */
-/* 4. Intro-Bereich */
-/* ============================= */
-.intro-section {
-  padding: 10px 20px;
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
-  color: #eee;
-  line-height: 1.5;
-  font-size: 1rem;
-}
-
-/* ============================= */
-/* 4. Main Bereich              */
+/* Main Bereich              */
 /* ============================= */
 main {
   display: flex;
@@ -103,7 +90,7 @@ main {
 
 .main-area {
   width: 100%;
-  padding: 20px;
+  padding: 10px 20px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -114,8 +101,15 @@ main {
   padding: 2px 16px;
 }
 
+.default-article {
+  max-width: 900px;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
 /* ============================= */
-/* 6. Cards                      */
+/* Cards                      */
 /* ============================= */
 div.card {
   border-radius: 10px;
@@ -137,7 +131,7 @@ div .card a {
 }
 
 /* ============================= */
-/* 7. Footer                     */
+/* Footer                     */
 /* ============================= */
 footer {
   /* ensure footer spans full width and sits at the bottom */
@@ -168,93 +162,4 @@ footer ul li a {
   text-align: center;
   padding: 14px 16px;
   /* text-decoration: none; */
-}
-
-/* ============================= */
-/* About-Style (about.html)      */
-/* ============================= */
-
-/* Allgemeine Breite/Ausrichtung für den Inhalt auf about.html */
-main article {
-  max-width: 900px;
-  margin: 20px auto;
-}
-
-/* Hintergrund-/Textbereich mit Liste und Bildern */
-.background-section {
-  padding: 10px 20px;
-  text-align: left;
-  line-height: 1.5;
-  font-size: 1rem;
-}
-
-#LearningsList {
-  margin-bottom: 20px;
-  margin-left: 50px;
-  margin-right: 210px;
-  text-align: left !important;
-}
-
-/* Definition-List-Bereich */
-.DefinitionList-section {
-  padding: 10px 20px 30px 20px;
-  text-align: left;
-  line-height: 1.5;
-  font-size: 1rem;
-}
-
-/* Bilder links und rechts floaten */
-.about-figure-left {
-  float: left;
-  width: 40%;
-  max-width: 220px;
-  margin: 0 20px 10px 0;
-}
-
-.about-figure-right {
-  float: right;
-  width: 40%;
-  max-width: 220px;
-  margin: 0 0 10px 20px;
-}
-
-.about-figure-left img,
-.about-figure-right img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-  border: 1px solid #555;
-}
-
-.about-figure-left figcaption,
-.about-figure-right figcaption {
-  font-size: 0.85rem;
-  margin-top: 4px;
-}
-
-/* Clearing, damit der Footer nicht „mitfloatet“ */
-.background-section::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-/* Definition List etwas lesbarer machen */
-.about-definition-list dt {
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-.about-definition-list dd {
-  margin-left: 0;
-  margin-bottom: 5px;
-}
-
-#LearningsListTitel {
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-.spacer {
-  padding-top: 1.5em;
 }
