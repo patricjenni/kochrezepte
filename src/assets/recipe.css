@@ -1,3 +1,36 @@
+/* Abstand der gesamten Tabelle */
+.ingredient-table {
+  width: 100%;
+  margin: 20px;
+  box-sizing: border-box;
+}
+
+/* Kopfzeilen */
+.ingredient-table th {
+  font-size: 2em;
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Normale Zeilen */
+.ingredient-table td {
+  padding: 4px 0;
+  vertical-align: top;
+}
+
+/* Spalte "Menge" – entspricht .ingredient-quantity (fix 100px) */
+.ingredient-table td:nth-child(1) {
+  font-weight: bold;
+  width: 100px;
+  white-space: nowrap; /* kein Zeilenumbruch */
+}
+
+/* Spalte "Zutat" – entspricht .ingredient-name */
+.ingredient-table td:nth-child(2) {
+  overflow: hidden;
+}
+
 .preperation {
   margin: 20px 20px 20px 50px;
   box-sizing: border-box;
@@ -5,41 +38,9 @@
   text-align: left;
 }
 
-.ingredient {
-  margin: 20px;
-  box-sizing: border-box;
-}
-
-.ingredient h1,
-.ingredient h2,
 .preperation h1,
 .preperation h2 {
   padding-bottom: 20px;
-}
-
-/* layout each ingredient row as a single flex line so the two spans stay side-by-side */
-.ingredient > div {
-  display: flex;
-  flex-wrap: nowrap; /* prevent wrapping to next line */
-  gap: 0.5rem;
-  align-items: center;
-  padding-bottom: 0.6rem;
-}
-
-.ingredient-quantity {
-  font-weight: bold;
-  text-align: left;
-  /* make the quantity a fixed column inside the flex row */
-  flex: 0 0 100px; /* do not grow or shrink, keep 100px */
-}
-
-.ingredient-name {
-  text-align: left;
-  /* take remaining space; allow truncation instead of wrapping */
-  flex: 1 1 auto;
-  min-width: 0; /* allow flex children to shrink below their content width */
-  overflow: hidden;
-  white-space: nowrap;
 }
 
 .recipe-main-image img {
