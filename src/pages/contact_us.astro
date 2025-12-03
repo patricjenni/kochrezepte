@@ -1,0 +1,25 @@
+---
+import MySiteLayout from "../layouts/SiteLayout.astro";
+---
+
+<MySiteLayout title="Home Page">
+  <!-- Content Container -->
+  <main>
+    <div class="container">
+      <div class="main-area">
+        <div class="card">
+          <form action="/" method="post">
+            <label for="name">Vorname:</label>
+            <input type="text" required name="name" />
+            <label for="phone">Telefon:</label>
+            <input type="tel" required name="phone" />
+            <label for="message">Nachricht:</label>
+            <textarea name="message" required></textarea>
+            <button type="submit">Absenden</button>
+            <button type="reset">Formular zurücksetzen</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+</MySiteLayout>
