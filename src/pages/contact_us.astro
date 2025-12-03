@@ -8,15 +8,34 @@ import MySiteLayout from "../layouts/SiteLayout.astro";
     <div class="container">
       <div class="main-area">
         <div class="card">
-          <form action="/" method="post">
+          <form action="/contact_us" method="get">
             <label for="name">Vorname:</label>
-            <input type="text" required name="name" />
+            <input
+              type="text"
+              required
+              name="name"
+              placeholder="Dein Vorname..."
+            />
+            <label for="lastname">Nachname:</label>
+            <input
+              type="text"
+              required
+              name="lastname"
+              placeholder="Dein Nachname..."
+            />
             <label for="phone">Telefon:</label>
-            <input type="tel" required name="phone" />
+            <input
+              type="tel"
+              required
+              name="phone"
+              placeholder="Dein Nachname..."
+            />
             <label for="message">Nachricht:</label>
-            <textarea name="message" required></textarea>
-            <button type="submit">Absenden</button>
-            <button type="reset">Formular zurücksetzen</button>
+            <textarea name="message" placeholder="Deine Nachricht..." required
+            ></textarea>
+            <div class="spacer" style="width: 100%;"></div>
+            <input type="submit" value="Absenden" />
+            <input type="reset" value="Formular zurücksetzen" />
           </form>
         </div>
       </div>
