@@ -38,7 +38,7 @@
 }
 
 /* Clearing, damit der DefinitoinList "Begriffe" nicht „mitfloatet“ */
-#TextWithImagesSection::after {
+#WhatWePractice::after {
   content: "";
   display: block;
   clear: both;
