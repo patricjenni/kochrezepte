@@ -149,10 +149,13 @@ main {
 /* Add some padding inside the card container */
 .container {
   padding: 2px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 764pt;
+  margin: 0 auto;
 }
 
 .default-article {
-  max-width: 900px;
   text-align: center;
   line-height: 1.5;
   font-size: 1rem;
