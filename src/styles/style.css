@@ -169,7 +169,7 @@ main {
 /* ============================= */
 /* Cards                      */
 /* ============================= */
-div.card {
+div .card {
   border-radius: 10px;
   /* 5px rounded corners */
   padding: 20px 20px;
@@ -181,12 +181,20 @@ div.card {
   border: 1px solid #878787;
 }
 
-div.card:hover {
+div .card:hover {
   box-shadow: 10px 10px 40px 0px rgb(255, 255, 255, 0.6);
 }
 
 div .card a {
   text-decoration: none;
+}
+
+div .card .content {
+  margin-top: 1em;
+}
+
+div .card h2 {
+  font-size: xx-large;
 }
 
 /* ===================================================== */
