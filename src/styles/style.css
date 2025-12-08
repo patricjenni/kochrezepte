@@ -181,8 +181,11 @@ div .card {
   border: 1px solid #878787;
 }
 
-div .card:hover {
-  box-shadow: 10px 10px 40px 0px rgb(255, 255, 255, 0.6);
+/*
+* :has() is a pseudo class matches any parent element that has a specific sibling or has a specific element inside it
+*/
+div .card:has(a):hover {
+  box-shadow: 10px 10px 40px 0px rgba(255, 255, 255, 0.6);
 }
 
 div .card a {
