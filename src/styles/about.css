@@ -72,6 +72,11 @@ th {
   text-align: left;
 }
 
+/* cells that span over multiple cells */
+td[colspan] {
+  text-align: center;
+}
+
 tr:nth-child(even) {
   background-color: #464646;
 }
