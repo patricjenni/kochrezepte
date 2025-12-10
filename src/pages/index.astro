@@ -5,32 +5,47 @@ import MySiteLayout from "../layouts/SiteLayout.astro";
 <MySiteLayout title="Home Page">
   <!-- Content Container -->
   <main>
-    <div class="container">
-      <div class="main-area">
-        <article class="default-article">
-          <p>
-            Diese Kochrezepte sind speziell für Entwickler gedacht: klar
-            strukturiert, logisch aufgebaut und ohne unnötiges Blabla. Jedes
-            Rezept folgt derselben Systematik – schnell erfassbar, effizient
-            umsetzbar und genau das Richtige, wenn man nach einem Tag Debugging
-            etwas braucht, das einfach funktioniert.
-          </p>
-        </article>
-        <div class="card">
-          <h2>Zürigeschnetzeltes mit Rösti</h2>
-          <a href="rezepte/zuerigeschnetzeltes/">
-            <div class="content">
-              <p>Das Rezept der Rezepte.</p>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Hello World</h1>
+        <p class="subtitle">
+          My first website with <strong>Bulma</strong>!
+        </p>
+      </div>
+      <div class="grid">
+        <div class="container">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img
+                  src="/src/assets/zürigeschnetzeltes_200.jpg"
+                  alt="Placeholder image"
+                />
+              </figure>
             </div>
-          </a>
-        </div>
-        <div class="card">
-          <h2>Kartoffelsalat</h2>
-          <div class="content">
-            <p>Grossmutters Hit.</p>
+            <header class="card-header">
+              <p class="card-header-title">Zürigeschnetzeltes mit Rösti</p>
+              <button class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </header>
+            <div class="card-content">
+              <div class="content">
+                Das Rezept der Rezepte.
+                <br />
+                <time datetime="2025-12-110">11:09 PM - 10 Dec 2025</time>
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a href="rezepte/zuerigeschnetzeltes/" class="card-footer-item"
+                >Zum Rezept...</a
+              >
+            </footer>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </main>
 </MySiteLayout>
