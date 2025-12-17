@@ -1,15 +1,14 @@
 ---
-import "../styles/recipe.css";
 import MySiteLayout from "../layouts/SiteLayout.astro";
 ---
 
 <MySiteLayout title="Kochen - How-To">
-  <main class="main-area">
-    <div class="container">
-      <div class="card">
-        <h2>Lerne die Basics des Kochens</h2>
-        <div class="content">
-          <!--
+  <div class="card">
+    <header>
+      <p class="card-header-title">Lerne die Basics des Kochens</p>
+    </header>
+    <div class="card-image">
+      <!--
           Documentation: iframe "allow" attribute
 
           The "allow" attribute on an <iframe> declares a Permissions Policy for the embedded context.
@@ -32,18 +31,16 @@ import MySiteLayout from "../layouts/SiteLayout.astro";
           - Fullscreen is commonly enabled with the separate allowfullscreen attribute (or by allowing
             the "fullscreen" feature in a Permissions Policy).
           -->
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube-nocookie.com/embed/BPrjXWyc1_U?si=AgWnzMYWevjlwFeW"
-            title="YouTube video player"
-            allow="accelerometer;
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube-nocookie.com/embed/BPrjXWyc1_U?si=AgWnzMYWevjlwFeW"
+        title="YouTube video player"
+        allow="accelerometer;
             autoplay; clipboard-write; encrypted-media; gyroscope;
             picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen></iframe>
-        </div>
-      </div>
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
     </div>
-  </main>
+  </div>
 </MySiteLayout>
