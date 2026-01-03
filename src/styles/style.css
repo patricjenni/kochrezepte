@@ -7,12 +7,10 @@
 
   --my-accent-color: hsl(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l));
   --my-accent-light: hsl(var(--bulma-primary-h), var(--bulma-primary-s), 70%);
+  --my-accent-dark: hsl(var(--bulma-primary-h), 30%, 15%);
 
   --bulma-link-text: var(--my-accent-light);
   --bulma-link: var(--my-accent-light);
   
-  --bulma-code: var(--my-accent-light);
-
-
-  
+  --bulma-code: var(--my-accent-light);  
 }

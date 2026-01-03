@@ -90,4 +90,5 @@ th {
   padding-bottom: 12px;
   text-align: left;
   color: white;
+  background-color: var(--my-accent-dark);
 }
