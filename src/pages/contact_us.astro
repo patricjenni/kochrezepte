@@ -3,42 +3,55 @@ import MySiteLayout from "../layouts/SiteLayout.astro";
 ---
 
 <MySiteLayout title="Home Page">
-  <!-- Content Container -->
-  <main>
-    <div class="container">
-      <div class="main-area">
-        <div class="card">
+  <div class="container mt-6" style="display: flex; justify-content: center; align-items: flex-start; min-height: 100%;">
+    
+    <div class="column is-6-desktop is-4-tablet is-4-mobile" style="min-width: 320px;">
+      
+      <div class="card">
+        <div class="card-content">
           <form action="/contact_us" method="get">
-            <label for="name">Vorname:</label>
-            <input
-              type="text"
-              required
-              name="name"
-              placeholder="Dein Vorname..."
-            />
-            <label for="lastname">Nachname:</label>
-            <input
-              type="text"
-              required
-              name="lastname"
-              placeholder="Dein Nachname..."
-            />
-            <label for="phone">Telefon:</label>
-            <input
-              type="tel"
-              required
-              name="phone"
-              placeholder="Dein Nachname..."
-            />
-            <label for="message">Nachricht:</label>
-            <textarea name="message" placeholder="Deine Nachricht..." required
-            ></textarea>
-            <div class="spacer" style="width: 100%;"></div>
-            <input type="submit" value="Absenden" />
-            <input type="reset" value="Formular zurücksetzen" />
+            
+            <div class="field">
+              <label class="label">Vorname:</label>
+              <div class="control">
+                <input class="input is-dark" type="text" name="name" required placeholder="Dein Vorname..." />
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Nachname:</label>
+              <div class="control">
+                <input class="input is-dark" type="text" name="lastname" required placeholder="Dein Nachname..." />
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Telefon:</label>
+              <div class="control">
+                <input class="input is-dark" type="tel" name="phone" required placeholder="Deine Nummer..." />
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Nachricht:</label>
+              <div class="control">
+                <textarea class="textarea is-dark" name="message" required placeholder="Deine Nachricht..."></textarea>
+              </div>
+            </div>
+
+            <div class="field mt-5">
+              <div class="control">
+                <input type="submit" class="button is-primary is-fullwidth mb-2" value="Absenden" />
+              </div>
+              <div class="control">
+                <input type="reset" class="button is-primary is-fullwidth" value="Zurücksetzen" />
+              </div>
+            </div>
+
           </form>
         </div>
       </div>
+
     </div>
-  </main>
+  </div>
 </MySiteLayout>
