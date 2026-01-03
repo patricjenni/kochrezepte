@@ -3,44 +3,50 @@ import MySiteLayout from "../layouts/SiteLayout.astro";
 ---
 
 <MySiteLayout title="Kochen - How-To">
-  <div class="card">
-    <header>
-      <p class="card-header-title">Lerne die Basics des Kochens</p>
-    </header>
-    <div class="card-image">
-      <!--
-          Documentation: iframe "allow" attribute
+  <div class="container mt-6" style="display: flex; justify-content: center; align-items: flex-start; min-height: 100vh;">
+    <div class="column is-8-desktop is-10-tablet is-12-mobile">
+      <div class="card">
+        <header>
+          <p class="card-header-title">Lerne die Basics des Kochens</p>
+        </header>
+        <div class="card-image">
+          <!--
+              Documentation: iframe "allow" attribute
 
-          The "allow" attribute on an <iframe> declares a Permissions Policy for the embedded context.
-          It lists, as a semicolon- or space-separated set of feature tokens, which browser features the framed
-          content is permitted to use. This does not override browser-wide privacy settings or user preferences;
-          it only grants permission from the embedding document's side.
+              The "allow" attribute on an <iframe> declares a Permissions Policy for the embedded context.
+              It lists, as a semicolon- or space-separated set of feature tokens, which browser features the framed
+              content is permitted to use. This does not override browser-wide privacy settings or user preferences;
+              it only grants permission from the embedding document's side.
 
-          Features present in the selection:
-          - accelerometer: access to device motion sensors (acceleration).
-          - gyroscope: access to device orientation/rotation sensors.
-          - autoplay: allow media to play automatically (subject to browser autoplay policies).
-          - clipboard-write: allow writing to the system clipboard via the Clipboard API.
-          - encrypted-media: allow use of Encrypted Media Extensions (DRM-protected playback).
-          - picture-in-picture: allow using Picture-in-Picture for video elements.
-          - web-share: allow invoking the Web Share API to share content from the iframe.
+              Features present in the selection:
+              - accelerometer: access to device motion sensors (acceleration).
+              - gyroscope: access to device orientation/rotation sensors.
+              - autoplay: allow media to play automatically (subject to browser autoplay policies).
+              - clipboard-write: allow writing to the system clipboard via the Clipboard API.
+              - encrypted-media: allow use of Encrypted Media Extensions (DRM-protected playback).
+              - picture-in-picture: allow using Picture-in-Picture for video elements.
+              - web-share: allow invoking the Web Share API to share content from the iframe.
 
-          Notes:
-          - Some features can also be controlled with more granular directives (origins/values) via a full
-            Permissions-Policy header or more specific allow syntax.
-          - Fullscreen is commonly enabled with the separate allowfullscreen attribute (or by allowing
-            the "fullscreen" feature in a Permissions Policy).
-          -->
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube-nocookie.com/embed/BPrjXWyc1_U?si=AgWnzMYWevjlwFeW"
-        title="YouTube video player"
-        allow="accelerometer;
-            autoplay; clipboard-write; encrypted-media; gyroscope;
-            picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen></iframe>
+              Notes:
+              - Some features can also be controlled with more granular directives (origins/values) via a full
+                Permissions-Policy header or more specific allow syntax.
+              - Fullscreen is commonly enabled with the separate allowfullscreen attribute (or by allowing
+                the "fullscreen" feature in a Permissions Policy).
+              -->
+          <figure class="image is-16by9">
+            <iframe
+              class="has-ratio"
+              src="https://www.youtube-nocookie.com/embed/BPrjXWyc1_U?si=AgWnzMYWevjlwFeW"
+              title="YouTube video player"
+              allow="accelerometer;
+                  autoplay; clipboard-write; encrypted-media; gyroscope;
+                  picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </figure>
+        </div>
+      </div>
     </div>
   </div>
 </MySiteLayout>
