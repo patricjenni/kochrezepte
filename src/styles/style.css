@@ -1,1 +1,18 @@
 /* Hier wieder Globales Bulma-CSS einfügen */
+
+:root {
+  --bulma-primary-h: 28deg;  /* Hue */
+  --bulma-primary-s: 80%;    /* Saturation */
+  --bulma-primary-l: 50%;    /* Lightness */
+
+  --my-accent-color: hsl(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l));
+  --my-accent-light: hsl(var(--bulma-primary-h), var(--bulma-primary-s), 70%);
+
+  --bulma-link-text: var(--my-accent-light);
+  --bulma-link: var(--my-accent-light);
+  
+  --bulma-code: var(--my-accent-light);
+
+
+  
+}
