@@ -1,0 +1,26 @@
+#navbar-check:checked ~ .navbar {
+  .navbar-menu {
+    display: block;
+  }
+
+  .navbar-burger {
+    span:nth-child(1) {
+      opacity: 0;
+    }
+    span:nth-child(2) {
+      opacity: 0;
+    }
+
+    span:nth-child(3) {
+      transform: translateY(6px) rotate(45deg);
+    }
+
+    span:nth-child(4) {
+      transform: translateY(-6px) rotate(-45deg);
+    }
+  }
+}
+
+.navbar-burger span {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}

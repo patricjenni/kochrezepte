@@ -1,1 +1,8 @@
 @use "bulma/sass";
+
+// Your custom styles
+@import "./style.scss";
+@import "./SiteLayout.scss";
+@import "./about.scss";
+@import "./recipe.scss";
+@import "./indicators.scss";
