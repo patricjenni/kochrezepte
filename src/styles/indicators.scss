@@ -1,8 +1,11 @@
+// Shadow-Mixin
+@mixin drop-shadow($blur: 16px) {
+    box-shadow: 0 10px $blur rgba(0, 0, 0, 0.5);
+}
+
 .indicator-cell {
     min-height: 80px; 
-    
     padding: 8px 15px; 
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,7 +28,12 @@
     color: #ffffff; 
     cursor: pointer;
     transform: translateY(-3px);
-    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.5); 
+    
+    @include drop-shadow(); 
+}
+
+.special-indicator-cell:hover {
+    @include drop-shadow(30px);
 }
 
 .indicator-cell:hover .has-text-primary,
