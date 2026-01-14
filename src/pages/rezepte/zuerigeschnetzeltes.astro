@@ -7,7 +7,9 @@ import MySiteLayout from "../../layouts/SiteLayout.astro";
   <main class="main-area">
     <div class="container">
       <section class="recipe-main-image">
-        <img src="/src/assets/zürigeschnetzeltes.jpg" />
+        <img
+          src={`${import.meta.env.BASE_URL}src/assets/zürigeschnetzeltes.jpg`}
+        />
       </section>
       <section class="ingredient">
         <table class="ingredient-table">
