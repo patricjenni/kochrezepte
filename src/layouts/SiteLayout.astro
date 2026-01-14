@@ -3,17 +3,23 @@ const { title } = Astro.props;
 import "../styles/mystyles.scss";
 
 const baseUrl = import.meta.env.BASE_URL;
+
+// Ensure baseUrl always ends with / for proper concatenation
+const getNavUrl = (path: string): string => {
+  return `${baseUrl}${path}`;
+};
+
 const navItems = [
   { label: "Home", href: baseUrl },
-  { label: "How-To", href: `${baseUrl}/how-to/` },
-  { label: "Zahlen", href: `${baseUrl}/indicators/` },
-  { label: "Kontakt", href: `${baseUrl}/contact_us/` },
+  { label: "How-To", href: getNavUrl("how-to/") },
+  { label: "Zahlen", href: getNavUrl("indicators/") },
+  { label: "Kontakt", href: getNavUrl("contact_us/") },
 ];
 
 const recipes = [
   {
     label: "Zürigeschnetzeltes",
-    href: `${baseUrl}/rezepte/zuerigeschnetzeltes`,
+    href: getNavUrl("rezepte/zuerigeschnetzeltes/"),
   },
   { label: "Kartoffelsalat", href: "#" },
 ];
@@ -73,12 +79,12 @@ const recipes = [
           </div>
 
           <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link" href={`${baseUrl}/about/`}> About </a>
+            <a class="navbar-link" href={getNavUrl("about/")}> About </a>
             <div class="navbar-dropdown">
-              <a class="navbar-item" href={`${baseUrl}/about/#WhatWePractice`}>
+              <a class="navbar-item" href={getNavUrl("about/#WhatWePractice")}>
                 Was wir üben
               </a>
-              <a class="navbar-item" href={`${baseUrl}/about/#TermsInProject`}>
+              <a class="navbar-item" href={getNavUrl("about/#TermsInProject")}>
                 Begriffe im Projekt
               </a>
             </div>
