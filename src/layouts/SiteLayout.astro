@@ -6,7 +6,6 @@ const baseUrl = import.meta.env.BASE_URL;
 const navItems = [
   { label: "Home", href: baseUrl },
   { label: "How-To", href: `${baseUrl}/how-to/` },
-  { label: "About", href: `${baseUrl}/about/` },
   { label: "Zahlen", href: `${baseUrl}/indicators/` },
   { label: "Kontakt", href: `${baseUrl}/contact_us/` },
 ];
@@ -74,12 +73,12 @@ const recipes = [
           </div>
 
           <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link" href={`${baseUrl}about/`}> About </a>
+            <a class="navbar-link" href={`${baseUrl}/about/`}> About </a>
             <div class="navbar-dropdown">
-              <a class="navbar-item" href={`${baseUrl}about/#WhatWePractice`}>
+              <a class="navbar-item" href={`${baseUrl}/about/#WhatWePractice`}>
                 Was wir üben
               </a>
-              <a class="navbar-item" href={`${baseUrl}about/#TermsInProject`}>
+              <a class="navbar-item" href={`${baseUrl}/about/#TermsInProject`}>
                 Begriffe im Projekt
               </a>
             </div>
