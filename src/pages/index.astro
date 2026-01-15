@@ -1,5 +1,6 @@
 ---
 import MySiteLayout from "../layouts/SiteLayout.astro";
+import zueriGeschnetzeltesImage from "../assets/zürigeschnetzeltes_200.jpg";
 ---
 
 <MySiteLayout title="Home Page">
@@ -30,7 +31,7 @@ import MySiteLayout from "../layouts/SiteLayout.astro";
               <div class="card-image">
                 <figure class="image is-4by3">
                   <img
-                    src="/src/assets/zürigeschnetzeltes_200.jpg"
+                    src={zueriGeschnetzeltesImage.src}
                     alt="Zürigeschnetzeltes mit Rösti"
                   />
                 </figure>
@@ -65,7 +66,7 @@ import MySiteLayout from "../layouts/SiteLayout.astro";
               <div class="card-image">
                 <figure class="image is-4by3">
                   <img
-                    src="/src/assets/zürigeschnetzeltes_200.jpg"
+                    src={zueriGeschnetzeltesImage.src}
                     alt="Zürigeschnetzeltes mit Rösti"
                   />
                 </figure>

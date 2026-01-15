@@ -1,5 +1,7 @@
 ---
 import MySiteLayout from "../layouts/SiteLayout.astro";
+import karteiKartenImage from "../assets/KarteiKarten.jpg";
+import kochBuchImage from "../assets/KochBuch.png";
 ---
 
 <MySiteLayout title="About">
@@ -24,7 +26,7 @@ import MySiteLayout from "../layouts/SiteLayout.astro";
               </ul>
 
               <figure class="about-figure-left">
-                <img src="/src/assets/KochBuch.png" alt="Kochbuch im Einsatz" />
+                <img src={karteiKartenImage.src} alt="Kochbuch im Einsatz" />
                 <figcaption>
                   Altagstaugliche Kochrezepte mit klaren Anleitungen.
                 </figcaption>
@@ -38,10 +40,7 @@ import MySiteLayout from "../layouts/SiteLayout.astro";
               </p>
 
               <figure class="about-figure-right">
-                <img
-                  src="/src/assets/KarteiKarten.jpg"
-                  alt="Karteikarten mit Rezepten"
-                />
+                <img src={kochBuchImage.src} alt="Karteikarten mit Rezepten" />
                 <figcaption>Zur Auswahl über Karten bereitgestellt.</figcaption>
               </figure>
 
