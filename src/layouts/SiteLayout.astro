@@ -110,7 +110,10 @@ const recipes = [
 
   <section class="hero is-fullheight-with-navbar">
     <div class="hero-body">
-      <slot />
+      <div class="container mt-6">
+        <p class="title has-text-centered">{title}</p>
+        <slot />
+      </div>
     </div>
   </section>
 

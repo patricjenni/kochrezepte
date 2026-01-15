@@ -2,50 +2,84 @@
 import MySiteLayout from "../layouts/SiteLayout.astro";
 ---
 
-<MySiteLayout title="Home Page">
-  <div class="container mt-6" style="display: flex; justify-content: center; align-items: flex-start; min-height: 100%;">  
-    <div class="column is-6-desktop is-4-tablet is-4-mobile" style="min-width: 320px;"> 
+<MySiteLayout title="Kontakt">
+  <div
+    class="container mt-6"
+    style="display: flex; justify-content: center; align-items: flex-start; min-height: 100%;"
+  >
+    <div
+      class="column is-6-desktop is-4-tablet is-4-mobile"
+      style="min-width: 320px;"
+    >
       <div class="card">
         <div class="card-content">
           <form action="/contact_us" method="get">
-            
             <div class="field">
               <label class="label">Vorname:</label>
               <div class="control">
-                <input class="input is-dark" type="text" name="name" required placeholder="Dein Vorname..." />
+                <input
+                  class="input is-dark"
+                  type="text"
+                  name="name"
+                  required
+                  placeholder="Dein Vorname..."
+                />
               </div>
             </div>
 
             <div class="field">
               <label class="label">Nachname:</label>
               <div class="control">
-                <input class="input is-dark" type="text" name="lastname" required placeholder="Dein Nachname..." />
+                <input
+                  class="input is-dark"
+                  type="text"
+                  name="lastname"
+                  required
+                  placeholder="Dein Nachname..."
+                />
               </div>
             </div>
 
             <div class="field">
               <label class="label">Telefon:</label>
               <div class="control">
-                <input class="input is-dark" type="tel" name="phone" required placeholder="Deine Nummer..." />
+                <input
+                  class="input is-dark"
+                  type="tel"
+                  name="phone"
+                  required
+                  placeholder="Deine Nummer..."
+                />
               </div>
             </div>
 
             <div class="field">
               <label class="label">Nachricht:</label>
               <div class="control">
-                <textarea class="textarea is-dark" name="message" required placeholder="Deine Nachricht..."></textarea>
+                <textarea
+                  class="textarea is-dark"
+                  name="message"
+                  required
+                  placeholder="Deine Nachricht..."></textarea>
               </div>
             </div>
 
             <div class="field mt-5">
               <div class="control">
-                <input type="submit" class="button is-primary is-fullwidth mb-2" value="Absenden" />
+                <input
+                  type="submit"
+                  class="button is-primary is-fullwidth mb-2"
+                  value="Absenden"
+                />
               </div>
               <div class="control">
-                <input type="reset" class="button is-primary is-fullwidth" value="Zurücksetzen" />
+                <input
+                  type="reset"
+                  class="button is-primary is-fullwidth"
+                  value="Zurücksetzen"
+                />
               </div>
             </div>
-
           </form>
         </div>
       </div>
