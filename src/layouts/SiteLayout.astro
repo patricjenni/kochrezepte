@@ -1,6 +1,7 @@
 ---
 const { title } = Astro.props;
 import "../styles/mystyles.scss";
+import favicon from "../assets/favicon.ico";
 
 const baseUrl = import.meta.env.BASE_URL;
 
@@ -43,8 +44,9 @@ const recipes = [
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Kochrezepte für Entwickler</title>
-  </head>
+    <link rel="icon" type="image/x-icon" href={favicon} <title /></head
+  >Kochrezepte für Entwickler
+
   <body>
     <input
       type="checkbox"
@@ -112,4 +114,5 @@ const recipes = [
       <slot />
     </div>
   </section>
+
 </html>
