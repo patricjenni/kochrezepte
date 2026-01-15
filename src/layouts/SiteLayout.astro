@@ -73,13 +73,12 @@ const recipes = [
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
         {
-          navItems.map((item) => (
-            <a class="navbar-item" href={item.href}>
-              {item.label}
+          navItems[0] ? (
+            <a class="navbar-item" href={navItems[0].href}>
+              {navItems[0].label}
             </a>
-          ))
+          ) : null
         }
-
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link"> Rezepte </a>
           <div class="navbar-dropdown">
@@ -92,7 +91,6 @@ const recipes = [
             }
           </div>
         </div>
-
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link" href={getNavUrl("about/")}> About </a>
           <div class="navbar-dropdown">
@@ -104,6 +102,13 @@ const recipes = [
             </a>
           </div>
         </div>
+        {
+          navItems.slice(1).map((item) => (
+            <a class="navbar-item" href={item.href}>
+              {item.label}
+            </a>
+          ))
+        }
       </div>
     </div>
   </nav>
