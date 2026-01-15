@@ -1,51 +1,35 @@
 ---
-import "../../styles/recipe.scss";
 import MySiteLayout from "../../layouts/SiteLayout.astro";
+import "../../styles/recipe.scss";
 import zueriGeschnetzeltesImage from "../../assets/zürigeschnetzeltes.jpg";
 ---
 
 <MySiteLayout title="Rezept - Zürigeschnetzeltes mit Rösti">
   <main class="main-area">
-    <div class="container">
+    <div class="content">
       <section class="recipe-main-image">
-        <img src={zueriGeschnetzeltesImage.src} />
+        <img src="/src/assets/zürigeschnetzeltes.jpg" />
       </section>
       <section class="ingredient">
-        <table class="ingredient-table">
-          <tbody>
-            <!-- Fleisch -->
-            <tr>
-              <td></td>
-              <td>Für 2 Personen:</td>
-            </tr>
-            <tr>
-              <th></th>
-              <th><strong>Fleisch</strong></th>
-            </tr>
-            <tr>
-              <td>1 EL</td>
-              <td>Bratbutter</td>
-            </tr>
-            <tr>
-              <td>400 g</td>
-              <td>Kalbsplätzli in feinen Streifen</td>
-            </tr>
-
-            <!-- Sauce -->
-            <tr>
-              <th></th>
-              <th><strong>Sauce</strong></th>
-            </tr>
-            <tr>
-              <td>1 EL</td>
-              <td>Butter</td>
-            </tr>
-            <tr>
-              <td>200 g</td>
-              <td>Champignons, in Scheiben</td>
-            </tr>
-          </tbody>
-        </table>
+        <h1>Fleisch</h1>
+        <div>
+          <span class="ingredient-quantity"></span>
+          <span class="ingredient-name">Bratbutter</span>
+        </div>
+        <div>
+          <span class="ingredient-quantity">400g</span>
+          <span class="ingredient-name">Kalbsplätzli in feinen Streifen</span>
+        </div>
+        <div class="spacer"></div>
+        <h1>Sauce</h1>
+        <div>
+          <span class="ingredient-quantity">1 EL</span>
+          <span class="ingredient-name">Butter</span>
+        </div>
+        <div>
+          <span class="ingredient-quantity">200 g</span>
+          <span class="ingredient-name">Champignons, in Scheiben</span>
+        </div>
       </section>
       <section class="preperation">
         <h1>Zubereitung</h1>
@@ -55,7 +39,6 @@ import zueriGeschnetzeltesImage from "../../assets/zürigeschnetzeltes.jpg";
           mit wenig Mehl bestäuben, je ca. 2 Min. braten, herausnehmen, würzen,
           warm stellen. Hitze reduzieren, Bratfett auftupfen.
         </p>
-        <div class="spacer"></div>
         <h2>Sauce</h2>
         <p>
           In derselben Pfanne Butter erwärmen, Champignons und Zwiebel
