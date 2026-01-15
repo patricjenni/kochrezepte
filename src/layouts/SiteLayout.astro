@@ -44,75 +44,75 @@ const recipes = [
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/x-icon" href={favicon} <title /></head
-  >Kochrezepte für Entwickler
+    <link rel="icon" type="image/x-icon" href={favicon} />
+    <title>Kochrezepte für Entwickler</title>
+  </head>
+  <input
+    type="checkbox"
+    id="navbar-check"
+    class="is-hidden-desktop"
+    style="display:none;"
+  />
 
-  <body>
-    <input
-      type="checkbox"
-      id="navbar-check"
-      class="is-hidden-desktop"
-      style="display:none;"
-    />
+  <nav
+    class="navbar is-fixed-top"
+    role="navigation"
+    aria-label="main navigation"
+  >
+    <div class="navbar-brand">
+      <a class="navbar-item" href={baseUrl}> </a>
 
-    <nav
-      class="navbar is-fixed-top"
-      role="navigation"
-      aria-label="main navigation"
-    >
-      <div class="navbar-brand">
-        <a class="navbar-item" href={baseUrl}> </a>
+      <label for="navbar-check" role="button" class="navbar-burger">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </label>
+    </div>
 
-        <label for="navbar-check" role="button" class="navbar-burger">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </label>
-      </div>
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        {
+          navItems.map((item) => (
+            <a class="navbar-item" href={item.href}>
+              {item.label}
+            </a>
+          ))
+        }
 
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
-          {
-            navItems.map((item) => (
-              <a class="navbar-item" href={item.href}>
-                {item.label}
-              </a>
-            ))
-          }
-
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link"> Rezepte </a>
-            <div class="navbar-dropdown">
-              {
-                recipes.map((recipe) => (
-                  <a class="navbar-item" href={recipe.href}>
-                    {recipe.label}
-                  </a>
-                ))
-              }
-            </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link"> Rezepte </a>
+          <div class="navbar-dropdown">
+            {
+              recipes.map((recipe) => (
+                <a class="navbar-item" href={recipe.href}>
+                  {recipe.label}
+                </a>
+              ))
+            }
           </div>
+        </div>
 
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link" href={getNavUrl("about/")}> About </a>
-            <div class="navbar-dropdown">
-              <a class="navbar-item" href={getNavUrl("about/#WhatWePractice")}>
-                Was wir üben
-              </a>
-              <a class="navbar-item" href={getNavUrl("about/#TermsInProject")}>
-                Begriffe im Projekt
-              </a>
-            </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href={getNavUrl("about/")}> About </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href={getNavUrl("about/#WhatWePractice")}>
+              Was wir üben
+            </a>
+            <a class="navbar-item" href={getNavUrl("about/#TermsInProject")}>
+              Begriffe im Projekt
+            </a>
           </div>
         </div>
       </div>
-    </nav>
-  </body>
+    </div>
+  </nav>
+
   <section class="hero is-fullheight-with-navbar">
     <div class="hero-body">
       <slot />
     </div>
   </section>
+
 
 </html>
