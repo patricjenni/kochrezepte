@@ -59,7 +59,7 @@ Unser Projekt wird mit einer CICD Pipeline (GitHub Actions) bei jedem push auf d
 
 Da GitHub Pages verwendet wird, liegen die Daten (HTML, CSS, Bilder) auf einem Server von GitHub (bzw. irgendwo in der Cloud). Die Anforderungen an den Webserver sind minimal. Dieser muss in der Lage sein unsere Dateien an Browser auszuliefern (kein PHP oder JAVA Umgebung notwendig).
 
-1. Ein Browser macht einen HTTP Get Request auf https://patricjenni.github.com/kochrezepte
+1. Ein Browser macht einen HTTP Get Request auf https://patricjenni.github.io/kochrezepte
 2. Der Webserver liefert die angefragten Dateien an den Browser
 3. Der Browser rendert die Page
 
