@@ -1,19 +1,10 @@
-/* Minimal recipe-specific styles - using Bulma columns for layout */
+.recipe-row, .ingredient-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.25rem;
+}
 
-.ingredient-quantity {
-  font-weight: bold;
-  text-align: left;
-  min-width: 80px;
+.recipe-row b, .ingredient-row b {
+  flex: 0 0 60px;
   display: inline-block;
-}
-
-.ingredient-name {
-  text-align: left;
-}
-
-.recipe-main-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 16px;
 }
