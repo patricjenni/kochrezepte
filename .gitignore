@@ -22,3 +22,9 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# Visual Studio folder
+.vs/
+
+# temporary Office files
+~$*
