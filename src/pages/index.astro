@@ -1,10 +1,13 @@
 ---
 import MySiteLayout from "../layouts/SiteLayout.astro";
 import zueriGeschnetzeltesImage from "../assets/zürigeschnetzeltes_200.jpg";
+import buendnerGerstensuppeImage from "../assets/buendner-gerstensuppe.png";
 import { joinUrl } from "../utils/url";
 
 const baseUrl = import.meta.env.BASE_URL;
-const recipeUrl = joinUrl(baseUrl, "rezepte/zuerigeschnetzeltes/");
+const zuerigeschnetzeltesUrl = joinUrl(baseUrl, "rezepte/zuerigeschnetzeltes/");
+const buendnerGerstensuppeUrl = joinUrl(baseUrl, "rezepte/buendnergerstensuppe/");
+
 ---
 
 <MySiteLayout title="Kochrezepte für Entwickler">
@@ -55,7 +58,76 @@ const recipeUrl = joinUrl(baseUrl, "rezepte/zuerigeschnetzeltes/");
                 </div>
               </div>
               <footer class="card-footer">
-                <a href={recipeUrl} class="card-footer-item">Zum Rezept...</a>
+                <a href={zuerigeschnetzeltesUrl} class="card-footer-item">Zum Rezept...</a>
+              </footer>
+            </div>
+          </div>
+        </div>
+        <div class="cell is-col-min-9 is-gap-8">
+          <div class="container">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img
+                    src={buendnerGerstensuppeImage.src}
+                    alt="Bündner Gerstensuppe"
+                    style="object-fit: cover;"
+                  />
+                </figure>
+              </div>
+              <header class="card-header">
+                <p class="card-header-title">Bündner Gerstensuppe</p>
+                <button class="card-header-icon" aria-label="more options">
+                  <span class="icon">
+                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </header>
+              <div class="card-content">
+                <div class="content">
+                  Stärkende Suppe.
+                  <br />
+                  <time datetime="2025-12-110">14:30 PM - 20 Dec 2025</time>
+                </div>
+              </div>
+              <footer class="card-footer">
+                <a href={buendnerGerstensuppeUrl} class="card-footer-item">Zum Rezept...</a>
+              </footer>
+            </div>
+          </div>
+        </div>
+        <div class="cell"></div>
+
+        <!-- Row 3 -->
+        <div class="cell"></div>
+        <div class="cell is-col-min-9 is-gap-8">
+          <div class="container">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img
+                    src={zueriGeschnetzeltesImage.src}
+                    alt="Zürigeschnetzeltes mit Rösti"
+                  />
+                </figure>
+              </div>
+              <header class="card-header">
+                <p class="card-header-title">Zürigeschnetzeltes mit Rösti</p>
+                <button class="card-header-icon" aria-label="more options">
+                  <span class="icon">
+                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </header>
+              <div class="card-content">
+                <div class="content">
+                  Das Rezept der Rezepte.
+                  <br />
+                  <time datetime="2025-12-110">11:09 PM - 10 Dec 2025</time>
+                </div>
+              </div>
+              <footer class="card-footer">
+                <a href={joinUrl(baseUrl, "rezepte/zuerigeschnetzeltes/")} class="card-footer-item">Zum Rezept...</a>
               </footer>
             </div>
           </div>
@@ -87,12 +159,13 @@ const recipeUrl = joinUrl(baseUrl, "rezepte/zuerigeschnetzeltes/");
                 </div>
               </div>
               <footer class="card-footer">
-                <a href={recipeUrl} class="card-footer-item">Zum Rezept...</a>
+                <a href={joinUrl(baseUrl, "rezepte/zuerigeschnetzeltes/")} class="card-footer-item">Zum Rezept...</a>
               </footer>
             </div>
           </div>
         </div>
         <div class="cell"></div>
+
       </div>
     </div>
   </div>
