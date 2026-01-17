@@ -1,4 +1,4 @@
----
+﻿---
 import MySiteLayout from "../../layouts/SiteLayout.astro";
 import "../../styles/recipe.scss";
 import zueriGeschnetzeltesImage from "../../assets/zürigeschnetzeltes.jpg";
@@ -11,17 +11,17 @@ import zueriGeschnetzeltesImage from "../../assets/zürigeschnetzeltes.jpg";
         <div class="column is-10-desktop is-12-tablet is-12-mobile">
           <div class="columns is-multiline">
             <!-- Recipe Image -->
-            <div class="column is-6-desktop is-6-tablet is-12-mobile">
+            <div class="column is-4-desktop is-4-tablet is-12-mobile">
               <section class="recipe-main-image">
                 <img src={zueriGeschnetzeltesImage.src} alt="Zürigeschnetzeltes" />
               </section>
             </div>
             
             <!-- Ingredients -->
-            <div class="column is-6-desktop is-6-tablet is-12-mobile">
+            <div class="column is-8-desktop is-8-tablet is-12-mobile">
               <section class="ingredient">
                 <h1 class="title is-4 mb-4">Fleisch</h1>
-                <div class="columns is-mobile is-gapless mb-1">
+                <div class="columns is-mobile mb-2">
                   <div class="column is-narrow">
                     <span class="ingredient-quantity"></span>
                   </div>
@@ -29,7 +29,7 @@ import zueriGeschnetzeltesImage from "../../assets/zürigeschnetzeltes.jpg";
                     <span class="ingredient-name">Bratbutter</span>
                   </div>
                 </div>
-                <div class="columns is-mobile is-gapless mb-1">
+                <div class="columns is-mobile mb-2">
                   <div class="column is-narrow">
                     <span class="ingredient-quantity">400g</span>
                   </div>
@@ -37,9 +37,9 @@ import zueriGeschnetzeltesImage from "../../assets/zürigeschnetzeltes.jpg";
                     <span class="ingredient-name">Kalbsplätzli in feinen Streifen</span>
                   </div>
                 </div>
-                <div class="spacer mb-3"></div>
+                <div class="spacer"></div>
                 <h1 class="title is-4 mb-4">Sauce</h1>
-                <div class="columns is-mobile is-gapless mb-1">
+                <div class="columns is-mobile mb-2">
                   <div class="column is-narrow">
                     <span class="ingredient-quantity">1 EL</span>
                   </div>
@@ -47,7 +47,7 @@ import zueriGeschnetzeltesImage from "../../assets/zürigeschnetzeltes.jpg";
                     <span class="ingredient-name">Butter</span>
                   </div>
                 </div>
-                <div class="columns is-mobile is-gapless mb-1">
+                <div class="columns is-mobile mb-2">
                   <div class="column is-narrow">
                     <span class="ingredient-quantity">200 g</span>
                   </div>

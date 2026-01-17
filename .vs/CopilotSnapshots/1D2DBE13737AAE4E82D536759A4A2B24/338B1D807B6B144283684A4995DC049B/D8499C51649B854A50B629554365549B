@@ -1,9 +1,9 @@
-/* Minimal recipe-specific styles - using Bulma columns for layout */
+﻿/* Minimal recipe-specific styles - using Bulma columns for layout */
 
 .ingredient-quantity {
   font-weight: bold;
   text-align: left;
-  min-width: 80px;
+  min-width: 100px;
   display: inline-block;
 }
 

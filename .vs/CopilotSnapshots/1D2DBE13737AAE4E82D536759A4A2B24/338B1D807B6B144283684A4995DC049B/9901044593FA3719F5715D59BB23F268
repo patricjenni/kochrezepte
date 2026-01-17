@@ -1,4 +1,4 @@
-/* Minimal recipe-specific styles - using Bulma columns for layout */
+﻿/* Minimal recipe-specific styles - using Bulma columns for layout */
 
 .ingredient-quantity {
   font-weight: bold;
