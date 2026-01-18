@@ -1,0 +1,60 @@
+---
+import MySiteLayout from "../../layouts/SiteLayout.astro";
+import "../../styles/recipe.scss";
+import kartoffelgratinImage from "../../assets/kartoffelgratin.jpg";
+---
+
+<MySiteLayout title="Rezept - Kartoffelgratin">
+  <main class="main-area">
+    <div class="content">
+      <section class="recipe-main-image">
+        <img src={kartoffelgratinImage.src} />
+      </section>
+      <section class="ingredient">
+        <div>
+          <span class="ingredient-quantity">1 kg</span>
+          <span class="ingredient-name">festkochende Kartoffeln</span>
+        </div>
+        <div>
+          <span class="ingredient-quantity">1,5 dl</span>
+          <span class="ingredient-name">Milch</span>
+        </div>
+        <div class="spacer"></div>
+        <div>
+          <span class="ingredient-quantity">1,5 dl</span>
+          <span class="ingredient-name">Halbrahm</span>
+        </div>
+        <div>
+          <span class="ingredient-quantity">1 TL</span>
+          <span class="ingredient-name">Salz</span>
+        </div>
+        <div>
+          <span class="ingredient-quantity">2 Msp.</span>
+          <span class="ingredient-name">Muskatnuss</span>
+        </div>
+        <div class="spacer"></div>
+        <div>
+          <span class="ingredient-quantity">P</span>
+          <span class="ingredient-name">Pfeffer aus der Mühle</span>
+        </div>
+        <div>
+          <span class="ingredient-quantity">100 g</span>
+          <span class="ingredient-name">geriebener Gruyère</span>
+        </div>
+        <div class="spacer"></div>
+      </section>
+      <section class="preperation">
+        <h1>Zubereitung</h1>
+        <p>
+          Kartoffeln schälen und in 2 mm dicke Scheiben hobeln, in der Form verteilen.
+          
+          Für den Guss Milch und Rahm mischen. Mit Salz, Muskatnuss und Pfeffer würzen.
+          Über die Kartoffeln giessen. Käse darauf verteilen.
+
+          Gratinform auf einem Gitter in die Mitte des kalten Backofens schieben.
+          Ofen auf 180 °C Unter-/Oberhitze einschalten und den Auflauf ca. 60 Minuten backen.
+        </p>
+      </section>
+    </div>
+  </main>
+</MySiteLayout>
