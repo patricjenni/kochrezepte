@@ -1,0 +1,74 @@
+---
+import MySiteLayout from "../../layouts/SiteLayout.astro";
+import "../../styles/recipe.scss";
+import aelplermagronenImage from "../../assets/aelplermagronen.jpg";
+---
+
+<MySiteLayout title="Rezept - Älplermagronen">
+  <main class="main-area">
+    <div class="content">
+      <section class="recipe-main-image">
+        <img src={aelplermagronenImage.src} />
+      </section>
+      <section class="ingredient">
+        <div>
+          <span class="ingredient-quantity">2</span>
+          <span class="ingredient-name">Zwiebeln</span>
+        </div>
+        <div>
+          <span class="ingredient-quantity">1/2 EL</span>
+          <span class="ingredient-name">Mehl</span>
+        </div>
+        <div class="spacer"></div>
+        <div>
+          <span class="ingredient-quantity">2 EL</span>
+          <span class="ingredient-name">Rapsöl</span>
+        </div>
+        <div>
+          <span class="ingredient-quantity">1 EL</span>
+          <span class="ingredient-name">Butter</span>
+        </div>
+        <div>
+          <span class="ingredient-quantity">250g</span>
+          <span class="ingredient-name">festkochende Kartoffeln</span>
+        </div>
+        <div class="spacer"></div>
+        <div>
+          <span class="ingredient-quantity">350g</span>
+          <span class="ingredient-name">Älplermagronen</span>
+        </div>
+        <div>
+          <span class="ingredient-quantity">200 g</span>
+          <span class="ingredient-name">geriebener Gruyère</span>
+        </div>
+        <div>
+          <span class="ingredient-quantity">2 dl</span>
+          <span class="ingredient-name">Halbrahm</span>
+        </div>
+        <div class="spacer"></div>
+        <div>
+          <span class="ingredient-quantity"></span>
+          <span class="ingredient-name">Pfeffer</span>
+        </div>
+        <div>
+          <span class="ingredient-quantity"></span>
+          <span class="ingredient-name">Petersilie für die Garnitur</span>
+        </div>
+        <div class="spacer"></div>
+      </section>
+      <section class="preperation">
+        <h1>Zubereitung</h1>
+        <p>
+          Zwiebeln in feine Ringe schneiden oder hobeln.
+          Mehl darüberstäuben und gut durchmischen.
+          Öl und Butter in einer Bratpfanne erhitzen.
+          Zwiebeln darin bei mittlerer Hitze ca. 10 Minuten knusprig braten.
+          Herausheben und auf Haushaltspapier abtropfen lassen.
+          Kartoffeln in grosse Würfel schneiden. In viel Salzwasser 5 Minuten kochen.
+          Magronen dazugeben, alles 8–10 Minuten knapp weich kochen.
+          Abgiessen und gut abtropfen lassen. Zurück in die Pfanne geben.
+        </p>
+      </section>
+    </div>
+  </main>
+</MySiteLayout>
