@@ -1,6 +1,7 @@
 ---
-import "../styles/navigation.scss";
+//import "../styles/navigation.scss";
 import { joinUrl } from "../utils/url";
+import NavbarBurger from "./NavbarBurger.astro";
 
 const baseUrl = import.meta.env.BASE_URL;
 
@@ -31,23 +32,11 @@ const recipes = [
 ];
 ---
 
-<input
-  type="checkbox"
-  id="navbar-check"
-  class="is-hidden-desktop"
-  style="display:none;"
-/>
+<input type="checkbox" id="navbar-check" class="is-hidden-desktop" style="display:none;" />
 
-<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a class="navbar-item" href={baseUrl}> </a>
-
-    <label for="navbar-check" role="button" class="navbar-burger">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </label>
+<nav class="navbar">
+  <div class="navbar-brand"> 
+    <NavbarBurger toggleId="navbar-check" /> 
   </div>
 
   <div id="navbarBasicExample" class="navbar-menu">

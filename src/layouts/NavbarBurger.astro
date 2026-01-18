@@ -1,0 +1,13 @@
+---
+import "../styles/navbarburger.scss";
+
+interface Props { toggleId: string; }
+const { toggleId } = Astro.props;
+---
+
+<label for={toggleId} role="button" class="navbar-burger">
+  <span aria-hidden="true"></span>
+  <span aria-hidden="true"></span>
+  <span aria-hidden="true"></span>
+  <span aria-hidden="true"></span>
+</label>
