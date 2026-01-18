@@ -2,14 +2,13 @@
 import MySiteLayout from "../layouts/SiteLayout.astro";
 import zueriGeschnetzeltesImage from "../assets/zürigeschnetzeltes_200.jpg";
 import buendnerGerstensuppeImage from "../assets/buendner-gerstensuppe.png";
+import ratatouilleImage from "../assets/ratatouille.png";
 import { joinUrl } from "../utils/url";
 
 const baseUrl = import.meta.env.BASE_URL;
 const zuerigeschnetzeltesUrl = joinUrl(baseUrl, "rezepte/zuerigeschnetzeltes/");
-const buendnerGerstensuppeUrl = joinUrl(
-  baseUrl,
-  "rezepte/buendnergerstensuppe/"
-);
+const buendnerGerstensuppeUrl = joinUrl(baseUrl, "rezepte/buendnergerstensuppe/");
+const ratatouilleUrl = joinUrl(baseUrl, "rezepte/ratatouille/");
 ---
 
 <MySiteLayout title="Kochrezepte für Entwickler">
@@ -91,29 +90,29 @@ const buendnerGerstensuppeUrl = joinUrl(
         </div>
       </div>
 
-      <!-- Placeholder Card 3 -->
+      <!-- Ratatouille Card -->
       <div class="column is-half-tablet is-one-third-desktop">
         <div class="card">
           <div class="card-image">
             <figure class="image is-4by3">
               <img
-                src={zueriGeschnetzeltesImage.src}
-                alt="Zürigeschnetzeltes mit Rösti"
+                src={ratatouilleImage.src}
+                alt="Ratatouille"
               />
             </figure>
           </div>
           <header class="card-header">
-            <p class="card-header-title">Zürigeschnetzeltes mit Rösti</p>
+            <p class="card-header-title">Das Rezept zum Film</p>
           </header>
           <div class="card-content">
             <div class="content">
               Das Rezept der Rezepte.
               <br />
-              <time datetime="2025-12-10">11:09 PM - 10 Dec 2025</time>
+              <time datetime="2025-12-10">08:22 PM - 18 Jan 2026</time>
             </div>
           </div>
           <footer class="card-footer">
-            <a href={zuerigeschnetzeltesUrl} class="card-footer-item"
+            <a href={ratatouilleUrl} class="card-footer-item"
               >Zum Rezept...</a
             >
           </footer>
