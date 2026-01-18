@@ -5,82 +5,49 @@ import zueriGeschnetzeltesImage from "../../assets/zürigeschnetzeltes.jpg";
 ---
 
 <MySiteLayout title="Rezept - Zürigeschnetzeltes mit Rösti">
-  <main class="section">
-    <div class="container">
-      <div class="columns is-multiline is-centered is-mobile">
-        <div class="column is-10-desktop is-12-tablet is-12-mobile">
-          <div class="columns is-multiline">
-            <!-- Recipe Image -->
-            <div class="column is-6-desktop is-6-tablet is-12-mobile">
-              <section class="recipe-main-image">
-                <img src={zueriGeschnetzeltesImage.src} alt="Zürigeschnetzeltes" />
-              </section>
-            </div>
-            
-            <!-- Ingredients -->
-            <div class="column is-6-desktop is-6-tablet is-12-mobile">
-              <section class="ingredient">
-                <h1 class="title is-4 mb-4">Fleisch</h1>
-                <div class="columns is-mobile is-gapless mb-1">
-                  <div class="column is-narrow">
-                    <span class="ingredient-quantity"></span>
-                  </div>
-                  <div class="column">
-                    <span class="ingredient-name">Bratbutter</span>
-                  </div>
-                </div>
-                <div class="columns is-mobile is-gapless mb-1">
-                  <div class="column is-narrow">
-                    <span class="ingredient-quantity">400g</span>
-                  </div>
-                  <div class="column">
-                    <span class="ingredient-name">Kalbsplätzli in feinen Streifen</span>
-                  </div>
-                </div>
-                <div class="spacer mb-3"></div>
-                <h1 class="title is-4 mb-4">Sauce</h1>
-                <div class="columns is-mobile is-gapless mb-1">
-                  <div class="column is-narrow">
-                    <span class="ingredient-quantity">1 EL</span>
-                  </div>
-                  <div class="column">
-                    <span class="ingredient-name">Butter</span>
-                  </div>
-                </div>
-                <div class="columns is-mobile is-gapless mb-1">
-                  <div class="column is-narrow">
-                    <span class="ingredient-quantity">200 g</span>
-                  </div>
-                  <div class="column">
-                    <span class="ingredient-name">Champignons, in Scheiben</span>
-                  </div>
-                </div>
-              </section>
-            </div>
-            
-            <!-- Preparation -->
-            <div class="column is-12">
-              <section class="preperation">
-                <h1 class="title is-3 mb-5">Zubereitung</h1>
-                <h2 class="title is-5 mb-3">Fleisch</h2>
-                <p class="mb-4">
-                  Bratbutter in Bratpfanne erhitzen, Fleisch und Nierli portionenweise
-                  mit wenig Mehl bestäuben, je ca. 2 Min. braten, herausnehmen, würzen,
-                  warm stellen. Hitze reduzieren, Bratfett auftupfen.
-                </p>
-                <h2 class="title is-5 mb-3">Sauce</h2>
-                <p class="mb-4">
-                  In derselben Pfanne Butter erwärmen, Champignons und Zwiebel
-                  andämpfen, Wein dazugiessen, auf die Hälfte einköcheln. Rahm, Bouillon
-                  und Maizena gut verrühren, dazugiessen, unter Rühren aufkochen, ca. 3
-                  Min. kochen. Fleisch und Nierli wieder beigeben, nur noch heiss werden
-                  lassen, würzen. Petersilie darüberstreuen.
-                </p>
-              </section>
-            </div>
-          </div>
+  <main class="main-area">
+    <div class="content">
+      <section class="recipe-main-image">
+        <img src={zueriGeschnetzeltesImage.src} />
+      </section>
+      <section class="ingredient">
+        <h1>Fleisch</h1>
+        <div>
+          <span class="ingredient-quantity"></span>
+          <span class="ingredient-name">Bratbutter</span>
         </div>
-      </div>
+        <div>
+          <span class="ingredient-quantity">400g</span>
+          <span class="ingredient-name">Kalbsplätzli in feinen Streifen</span>
+        </div>
+        <div class="spacer"></div>
+        <h1>Sauce</h1>
+        <div>
+          <span class="ingredient-quantity">1 EL</span>
+          <span class="ingredient-name">Butter</span>
+        </div>
+        <div>
+          <span class="ingredient-quantity">200 g</span>
+          <span class="ingredient-name">Champignons, in Scheiben</span>
+        </div>
+      </section>
+      <section class="preperation">
+        <h1>Zubereitung</h1>
+        <h2>Fleisch</h2>
+        <p>
+          Bratbutter in Bratpfanne erhitzen, Fleisch und Nierli portionenweise
+          mit wenig Mehl bestäuben, je ca. 2 Min. braten, herausnehmen, würzen,
+          warm stellen. Hitze reduzieren, Bratfett auftupfen.
+        </p>
+        <h2>Sauce</h2>
+        <p>
+          In derselben Pfanne Butter erwärmen, Champignons und Zwiebel
+          andämpfen, Wein dazugiessen, auf die Hälfte einköcheln. Rahm, Bouillon
+          und Maizena gut verrühren, dazugiessen, unter Rühren aufkochen, ca. 3
+          Min. kochen. Fleisch und Nierli wieder beigeben, nur noch heiss werden
+          lassen, würzen. Petersilie darüberstreuen.
+        </p>
+      </section>
     </div>
   </main>
 </MySiteLayout>
