@@ -5,6 +5,8 @@ import buendnerGerstensuppeImage from "../assets/buendner-gerstensuppe.png";
 import ratatouilleImage from "../assets/ratatouille.png";
 import kartoffelgratinImage from "../assets/kartoffelgratin.jpg";
 import aelplermagronenImage from "../assets/aelplermagronen.jpg";
+import bratwurstImage from "../assets/bratwurstzwiebelsauce.jpg";
+
 import { joinUrl } from "../utils/url";
 
 const baseUrl = import.meta.env.BASE_URL;
@@ -13,6 +15,7 @@ const buendnerGerstensuppeUrl = joinUrl(baseUrl, "rezepte/buendnergerstensuppe/"
 const kartoffelgratinUrl = joinUrl(baseUrl, "rezepte/kartoffelgratin/");
 const ratatouilleUrl = joinUrl(baseUrl, "rezepte/ratatouille/");
 const aelplermagronenUrl = joinUrl(baseUrl, "rezepte/aelplermagronen/");
+const bratwurstUrl = joinUrl(baseUrl, "rezepte/bratwurst/");
 ---
 
 <MySiteLayout title="Kochrezepte für Entwickler">
@@ -175,6 +178,35 @@ const aelplermagronenUrl = joinUrl(baseUrl, "rezepte/aelplermagronen/");
           </div>
           <footer class="card-footer">
             <a href={aelplermagronenUrl} class="card-footer-item"
+              >Zum Rezept...</a
+            >
+          </footer>
+        </div>
+      </div>
+
+       <!-- Bratwurst Card -->
+      <div class="column is-half-tablet is-one-third-desktop">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img
+                src={bratwurstImage.src}
+                alt="Bratwurst mit Zwiebelsauce"
+              />
+            </figure>
+          </div>
+          <header class="card-header">
+            <p class="card-header-title">Bratwurst mit Zwiebelsauce</p>
+          </header>
+          <div class="card-content">
+            <div class="content">
+              Der Klassiker neu interpretiert.
+              <br />
+              <time datetime="2025-12-10">09:09 AM - 17 Jan 2026</time>
+            </div>
+          </div>
+          <footer class="card-footer">
+            <a href={bratwurstUrl} class="card-footer-item"
               >Zum Rezept...</a
             >
           </footer>
